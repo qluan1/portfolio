@@ -1,0 +1,134 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact {
+    position: relative;
+    overflow: hidden;
+}
+
+#contact .contact-title{
+    font-family: 'KTP', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #3bba9c;
+}
+
+#contact .contact-description {
+    font-size: large;
+    margin-top: 2em;
+}
+
+
+#contact-form {
+    margin-top: 2em;
+    align-self: center;
+    row-gap: 5px;
+}
+
+#contact-form .input-container {
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+}
+
+#contact-form .input-container .underline {
+    position: absolute;
+    width: 400px;
+    height: 2px;
+    bottom: 0px;
+    left: -400px;
+    background-color: #3bba9c;
+    transition: 0.4s;
+}
+
+#contact-form .input-container .underline.display {
+    left: 0px;
+}
+
+
+#contact-form span,
+#contact-form input, 
+#contact-form textarea {
+    width: 400px;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: large;
+    outline: none;
+}
+
+#contact-form span {
+    font-size: medium;
+    height: 20px;
+    color: rgb(255, 191, 0);
+}
+
+#contact-form input {
+    height: 40px;
+    padding: 5px;
+    background-color: RGB(75, 75, 75);
+    color: white;
+    border: none;
+}
+
+#contact-form textarea {
+    height: 200px;
+    padding: 5px;
+    background-color: RGB(75, 75, 75);
+    color: white;
+    border: none;
+    overflow: scroll;
+}
+
+#contact-form button{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    background-color: #3bba9c;
+    border: 1px solid #3bba9c;
+    color: RGB(50, 50, 50);
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 2em;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-form button:hover{
+    color: #3bba9c;
+    background-color: transparent;
+}
+
+.contact-submit-message {
+    position: absolute;
+    right: 1em;
+    bottom: -600px;
+    background-color: RGBA(75, 75, 75, 0.5);
+    z-index: 5;
+    max-width: 300px;
+    max-height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.contact-submit-message.display {
+    bottom: 2em;
+}
+
+
+@media (max-width: 768px ) {
+    #contact-form .underline,
+    #contact-form .input-container,
+    #contact-form span,
+    #contact-form input, 
+    #contact-form textarea {
+        width: 250px;
+    }
+}

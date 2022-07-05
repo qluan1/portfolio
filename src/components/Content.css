@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'KTP';
+    src: url('../assets/fonts/KdamThmorPro.ttf') format('truetype');
+}
+
+#content {
+    min-width: 500px;
+    background-color: RGB(50, 50, 50);
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-section {
+    padding: 5em;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2em;
+}
+
+.about-title p {
+    font-family: 'KTP', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: #3bba9c;
+}
+
+.about-paragraph p {
+    font-size: x-large;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2em;
+}
+
+.skills-intro {
+    max-width: 700px;
+    flex: 1 1 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-present {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 700px;
+    flex: 1 1 400px;
+    overflow: hidden;
+}
+
+.sphere-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2em;
+}
+
+#skills div h1 {
+    font-family: 'KTP', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #3bba9c;
+}
+
+#skills div p {
+    font-size: large;
+    margin-top: 2em;
+}
+
+#skills div p span,
+#skills div p a {
+    color: #3bba9c;
+}
+
+#skills div p a:hover{
+    color: rgb(255, 191, 0);
+}
+
+.buttons-container {
+    justify-self: right;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.buttons-container button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid RGB(40, 40, 40);
+    transition: 0.2s;
+    background-color: RGB(40, 40, 40);
+    color: white;
+}
+
+.buttons-container button.is-active,
+.buttons-container button:hover {
+    background-color: transparent;
+    color: rgb(255, 191, 0);
+}
+
+
+@media (max-width: 768px) {
+    #content {
+        padding-top: 2rem;
+    }
+
+    .content-section {
+        padding: 2em;
+    }
+
+}
